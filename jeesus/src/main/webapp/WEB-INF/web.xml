@@ -4,4 +4,12 @@
 
 <web-app>
   <display-name>Oldskooler's Web Application Skeleton</display-name>
+  <servlet>
+  	<servlet-name>HalliHalloServlet</servlet-name>
+  	<servlet-class>de.oldskooler.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HalliHalloServlet</servlet-name>
+  	<url-pattern>/oldskoolerWebapp/</url-pattern>
+  </servlet-mapping>
 </web-app>
