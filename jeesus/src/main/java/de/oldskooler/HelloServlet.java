@@ -18,6 +18,7 @@ public class HelloServlet extends HttpServlet {
 		helloMessage = "HELLO GET";
 		PrintWriter writer = null;
 		try {
+			res.setContentType("text/html");
 			writer = res.getWriter();
 		} catch (IOException e) {
 			log("exception while getting writer!",e);
